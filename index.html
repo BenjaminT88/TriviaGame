@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Science & Nature Trivia Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Merienda+One|Permanent+Marker" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    <!-- https://opentdb.com/api.php?amount=40&category=17&difficulty=easy&type=multiple -->
+    <h1 id="title">Science & Nature Trivia Game</h1>
+
+    <div id="container">
+        <p class="msg">Choose From Below</p>
+        <form id="gForm">
+            <select name="qAmount" id="qAmount" class="select">
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="40">40</option>
+            </select>
+            <select name="qDifficulty" id="qDifficulty" class="select">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <br>
+            <button id="startGame">Start Game!</button>
+        </form>
+    </div>
+    <div id="game"></div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
